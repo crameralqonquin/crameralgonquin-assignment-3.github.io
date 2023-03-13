@@ -1,0 +1,70 @@
+/* Background properties */
+html {
+  background-image: url("https://cdn.shopify.com/s/files/1/0806/5321/products/bunnies-wallpaper_ds-wallpaper_lilipinso_bobby_rabbit_1024x1024.jpg");
+}
+
+/* Animation properties */
+.rabbit {
+  animation: rabbit 5s ease-out infinite;
+}
+
+.bernie-animation {
+  perspective: 800px;
+}
+
+.bernie-animation {
+  height: 0em;
+  left: 50%;
+  position: relative;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  width: 18em;
+}
+
+.byline span {
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+.rabbit, .byline {
+  position: absolute;
+}
+
+.rabbit {
+  top: -0.75em;
+}
+
+/* Keyframes */
+@keyframes rabbit {
+  0% {
+    opacity: 100%;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+/* Media queries*/
+@media only screen and (max-width: 600px) {
+  .bernie-animation {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bernie-animation {
+    font-size: 7px;
+  }
+}
